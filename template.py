@@ -1,9 +1,10 @@
-import os 
+import os
 from pathlib import Path
 
 project_name = "us_visa"
 
 list_of_files = [
+
     f"{project_name}/__init__.py",
     f"{project_name}/components/__init__.py",
     f"{project_name}/components/data_ingestion.py",  
@@ -23,8 +24,18 @@ list_of_files = [
     f"{project_name}/pipline/training_pipeline.py",
     f"{project_name}/pipline/prediction_pipeline.py",
     f"{project_name}/utils/__init__.py",
-    f"{project_name}/utils/main_utils.py", 
+    f"{project_name}/utils/main_utils.py",
+    "app.py",
+    "requirements.txt",
+    "Dockerfile",
+    ".dockerignore",
+    "demo.py",
+    "setup.py",
+    "config/model.yaml",
+    "config/schema.yaml",
 ]
+
+
 
 for filepath in list_of_files:
     filepath = Path(filepath)
